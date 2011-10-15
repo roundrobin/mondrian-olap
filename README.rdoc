@@ -1,5 +1,5 @@
 = mondrian-olap
-
+Notice: Added CloudSQL Support for tests (not stable).
 JRuby gem for performing multidimensional queries of relational database data using Mondrian OLAP Java library.
 
 == DESCRIPTION

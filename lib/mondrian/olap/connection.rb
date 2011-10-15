@@ -110,7 +110,7 @@ module Mondrian
           uri << ";schema=#{@params[:database_schema]}" if @params[:database_schema]
           uri
         when 'cloudsql'
-          uri = "jdbc:google:rdbms://#{@params[:host]}#{@params[:port] && ":#{@params[:port]}"}"
+          uri = "jdbc:google:rdbms://#{@params[:host]}/#{@params[:db]}"
           uri << ";schema=#{@params[:database_schema]}" if @params[:database_schema]
           uri  
         else
