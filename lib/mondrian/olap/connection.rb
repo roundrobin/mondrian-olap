@@ -109,6 +109,10 @@ module Mondrian
           uri = "jdbc:luciddb:http://#{@params[:host]}#{@params[:port] && ":#{@params[:port]}"}"
           uri << ";schema=#{@params[:database_schema]}" if @params[:database_schema]
           uri
+        when 'cloudsql'
+          uri = "jdbc:google:rdbms://#{@params[:host]}#{@params[:port] && ":#{@params[:port]}"}"
+          uri << ";schema=#{@params[:database_schema]}" if @params[:database_schema]
+          uri  
         else
           raise ArgumentError, 'unknown JDBC driver'
         end
@@ -124,6 +128,8 @@ module Mondrian
           'oracle.jdbc.OracleDriver'
         when 'luciddb'
           'org.luciddb.jdbc.LucidDbClientDriver'
+        when 'cloudsql'
+         'com.google.appengine.api.rdbms.AppEngineDriver'
         else
           raise ArgumentError, 'unknown JDBC driver'
         end
