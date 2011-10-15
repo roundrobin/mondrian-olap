@@ -4,15 +4,15 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{mondrian-olap}
+  s.name = %q{rr-mondrian-olap}
   s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Raimonds Simanovskis"]
-  s.date = %q{2011-07-04}
+  s.authors = ["Round Robin"]
+  s.date = %q{2011-10-15}
   s.description = %q{JRuby gem for performing multidimensional queries of relational database data using Mondrian OLAP Java library
 }
-  s.email = %q{raimonds.simanovskis@gmail.com}
+  s.email = %q{bigbauf@gmx.de}
   s.extra_rdoc_files = [
     "LICENSE-Mondrian.html",
     "LICENSE.txt",
@@ -61,7 +61,7 @@ Gem::Specification.new do |s|
     "spec/spec_helper.rb",
     "spec/support/matchers/be_like.rb"
   ]
-  s.homepage = %q{http://github.com/rsim/mondrian-olap}
+  s.homepage = %q{http://github.com/roundrobin/mondrian-olap}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.5.1}
   s.summary = %q{JRuby API for Mondrian OLAP Java library}
