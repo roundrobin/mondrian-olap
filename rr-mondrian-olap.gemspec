@@ -50,7 +50,7 @@ Gem::Specification.new do |s|
     "lib/mondrian/olap/result.rb",
     "lib/mondrian/olap/schema.rb",
     "lib/mondrian/olap/schema_element.rb",
-    "mondrian-olap.gemspec",
+    "rr-mondrian-olap.gemspec",
     "spec/connection_spec.rb",
     "spec/cube_spec.rb",
     "spec/fixtures/MondrianTest.xml",
